@@ -1,5 +1,6 @@
 .nav{
-    z-index: 99;
+    position: relative;
+    z-index: 20;
 }
 
 /* 顶部导航栏线条上方的布局 */
@@ -72,4 +73,88 @@
     height: 3px;
     /* border: 3px solid ; */
     background: linear-gradient(270deg, #3FBBFE, #A541FF);
+}
+
+/* 修改第三方样式 */
+.sc-gsxnyZ{
+    display: none !important;
+}
+
+/* 隐藏左侧 竖条导航栏 */
+.czVxJH{
+    margin: 0!important;
+    max-width: 100% !important;
+    padding: 0 !important;
+}
+
+.hzbhAV{
+    position: relative;
+    padding: 0 !important;
+    height: 62px !important;
+    background-color: transparent !important;
+    border-bottom: transparent !important;
+}
+
+/* 隐藏横条导航栏左侧内容 */
+.hzbhAV > .cjuMmG:first-child{
+    display: none !important;
+}
+
+/* 隐藏连接按钮右侧头像图片显示 */
+.fQMzPR{
+    display: none !important;
+}
+
+/* 隐藏地球翻译图标 */
+.tliser{
+    display: none !important;
+}
+
+.jnvqfy:nth-child(2){
+    padding-right: 160px;
+    justify-content: flex-end;
+    margin-top: 43px;
+}
+
+/* 按钮外部样式 */
+.hzbhAV .jnvqfy div{
+    width: 240px;
+    height: 62px;
+    background: linear-gradient(270deg, #3FBBFE, #A541FF);
+    box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.23);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 按钮文字样式 */
+.gcCDSt{
+    border: none!important;
+    background: transparent !important;
+    font-size: 18px;
+    font-family: Frick 0.3;
+    font-weight: 400;
+    color: #F3F3F3;
+    text-shadow: 0px 7px 8px rgba(0,0,0,0.23);
+    border: none;
+    box-shadow: none !important;
+}
+
+/* 隐藏连接钱包按钮上面文字  */
+.botGMG {
+    display: none !important;
+}
+
+.fsbHO{
+    width: 386px;
+    height: 47px;
+    background: linear-gradient(90deg, #3FBBFE, #A541FF);
+    border-radius: 15px;
+}
+
+.licvhJ{
+    height: 47px;
+    background: linear-gradient(90deg, #3FBBFE, #A541FF);
+    border-radius: 15px;
 }
