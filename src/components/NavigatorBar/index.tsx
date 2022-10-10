@@ -2,7 +2,7 @@
  * @Author: 'Salah' '2236291956@qq.com'
  * @Date: 2022-09-26 17:08:53
  * @LastEditors: 'Salah' '2236291956@qq.com'
- * @LastEditTime: 2022-09-28 16:38:10
+ * @LastEditTime: 2022-10-10 16:32:53
  * @FilePath: \FIFA Wolrd Cup\src\components\NavigatorBar\index.tsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -72,10 +72,10 @@ export default function Index(props) {
             role="button"
             tabIndex={0}
             onKeyDown={() => {
-              setTab(2, 'home')
+              setTab(2, 'homeindex')
             }}
             onClick={() => {
-              setTab(2, 'home')
+              setTab(2, 'homeindex')
             }}
             style={{
               background: tabIndex === 2 ? 'linear-gradient(90deg, rgba(63,187,254,0.95), rgba(165,65,255,0.95))' : '',
