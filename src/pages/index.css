@@ -1,0 +1,22 @@
+html,
+body,
+div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /* vertical-align: baseline; */
+    /* height: 100% ; */
+    width: 100% ;
+}
+
+body::-webkit-scrollbar{
+    display: none !important;
+    width: 0 !important;
+}
+
+.ihCizU{
+    overflow-x: inherit !important;
+}
+
+.element::-webkit-scrollbar { width: 0 !important }

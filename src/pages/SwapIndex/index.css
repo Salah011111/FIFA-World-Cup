@@ -1,0 +1,82 @@
+.SwapPage{
+    display: flex;
+    position: relative;
+    min-height: 100vh;
+    padding: 0 160px;
+    box-sizing: border-box;
+}
+
+.AddLiqidity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.Pagebg{
+    background:url('../../image/PCBackgroundImage02.png');
+    /* width:100%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-size: 100% 100%;
+}
+
+.addLiquidityBgOne{
+    position: absolute;
+    margin:0px;
+    background:url('../../image/PCBackgroundImage02.png') no-repeat;
+    background-size:100% 100%;
+}
+
+.swap{
+    position: relative;
+    z-index: 2;
+}
+
+/* 导航栏下方页面布局 */
+.swapIndex{
+    padding: 102px 20px 73px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.swapCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.addLiquiditybtn{
+    border-radius: 16px;
+    border: none;
+    width:154px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: none !important;
+    background-color: rgb(225, 120, 16) !important;
+    padding:15px 24px;
+    box-sizing: border-box;
+}
+
+.addLiquiditybtn span{
+    color:#fff;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.fgiAxh:nth-child(2n){
+    display: flex;
+    justify-content: flex-end;
+}

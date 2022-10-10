@@ -1,0 +1,75 @@
+.nav{
+    z-index: 99;
+}
+
+/* 顶部导航栏线条上方的布局 */
+.navTop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 105px;
+    align-items: center;
+}
+
+/* 导航栏按钮区域布局 */
+.navButtonblock{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+/* 导航栏每个按钮的属性 */
+.tabItem{
+    /* width:175px; */
+    height: 100%;
+    width: 175px;
+    /* background: linear-gradient(90deg, rgba(63,187,254,0.95), rgba(165,65,255,0.95)); */
+    border-radius: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* 按钮未被点击时候的按钮文字样式 */
+.tabItem span{
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: bold;
+}
+
+/* 连接按钮区域布局 */
+.connect{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* 连接按钮外部样式 */
+.connectButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    height: 62px;
+    background: linear-gradient(270deg, #3FBBFE, #A541FF);
+    box-shadow: 0px 7px 8px 0px rgba(0,0,0,0.23);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* 连接按钮文字样式 */
+.connecttext{
+    font-size: 18px;
+    font-family: Frick 0.3;
+    font-weight: 400;
+    color: #F3F3F3;
+    text-shadow: 0px 7px 8px rgba(0,0,0,0.23);
+}
+
+/* 顶部导航栏下方的线条 */
+.navLine{
+    width: 100%;
+    height: 3px;
+    /* border: 3px solid ; */
+    background: linear-gradient(270deg, #3FBBFE, #A541FF);
+}
