@@ -2,7 +2,7 @@
  * @Author: 'Salah' '2236291956@qq.com'
  * @Date: 2022-09-26 17:08:53
  * @LastEditors: 'Salah' '2236291956@qq.com'
- * @LastEditTime: 2022-10-10 18:00:38
+ * @LastEditTime: 2022-10-11 16:27:30
  * @FilePath: \FIFA Wolrd Cup\src\components\NavigatorBar\index.tsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -17,6 +17,8 @@ import Menu from '../Menu'
 import NavLogoUrl from '../../image/World_Cup_Logo.png'
 import NavLogoWhiteUrl from '../../image/footerLogo-one.png'
 
+declare const window: Window & { ethereum: any };
+
 export default function Index(props) {
   const history = useHistory()
 
@@ -27,6 +29,26 @@ export default function Index(props) {
   const setTab = (id, url) => {
     history.push(`/${url}`)
   }
+
+  const checknBNBNetwork = async () => {
+    try {
+      const { ethereum } = window
+      const chainId = await ethereum.request({ method: 'eth_chainId' });
+      const bscTestNetworkId = '0x61'
+      if(chainId !== bscTestNetworkId){
+        await ethereum.request({
+          method: "wallet_switchEthereumChain",
+          params: [{ chainId: bscTestNetworkId }],
+        });
+      }
+    } catch (error) {
+      alert(`checkNetwork error: ${error}`)
+    }
+  }
+
+  useEffect(()=>{
+    checknBNBNetwork()
+  },[])
 
   useEffect(() => {
     settabIndex(Number(props.msg))
