@@ -30,15 +30,11 @@ import Card, { GreyCard } from 'components/Card'
 import { AutoColumn } from 'components/Column'
 import ConfirmSwapModal from 'components/swap/ConfirmSwapModal'
 import CurrencyInputPanel from 'components/CurrencyInputPanel'
-// import CardNav from 'components/CardNav'
 import { AutoRow, RowBetween } from 'components/Row'
-// import AdvancedSwapDetailsDropdown from 'components/swap/AdvancedSwapDetailsDropdown'
 import confirmPriceImpactWithoutFee from 'components/swap/confirmPriceImpactWithoutFee'
 import { ArrowWrapper, BottomGrouping, SwapCallbackError, Wrapper } from 'components/swap/styleds'
 import TradePrice from 'components/swap/TradePrice'
-// import TokenWarningModal from 'components/TokenWarningModal'
-// import SyrupWarningModal from 'components/SyrupWarningModal'
-// import SafeMoonWarningModal from 'components/SafeMoonWarningModal'
+
 
 import ProgressSteps from 'components/ProgressSteps'
 
@@ -73,7 +69,7 @@ import ConnectWalletButton from 'components/ConnectWalletButton'
 import { useTranslation } from 'react-i18next'
 
 // 跳转
-import { Link, HashRouter, Route, Switch, Redirect } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 // 帮助提示弹窗组件
 import Question from '../../components/QuestionHelper'
@@ -90,10 +86,6 @@ import FullPositionCard from '../../components/PositionCard'
 // 引入StyledInternalLink 组件
 import { StyledInternalLink } from '../../components/Shared'
 
-import Popups from '../../components/Popups'
-import Pool from '../Pool'
-
-import { RedirectDuplicateTokenIds, RedirectOldAddLiquidityPathStructure } from '../AddLiquidity/redirects'
 import AppBody from '../AppBody'
 
 // import AppBody from '../AppBody'
