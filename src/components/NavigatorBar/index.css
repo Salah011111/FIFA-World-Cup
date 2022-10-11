@@ -88,7 +88,7 @@
 }
 
 .hzbhAV{
-    position: relative;
+    position: relative !important;
     padding: 0 !important;
     height: 62px !important;
     background-color: transparent !important;
@@ -111,9 +111,9 @@
 }
 
 .jnvqfy:nth-child(2){
-    padding-right: 160px;
+    /* padding-right: 160px; */
     justify-content: flex-end;
-    margin-top: 43px;
+    /* margin-top: 43px; */
 }
 
 /* 按钮外部样式 */
