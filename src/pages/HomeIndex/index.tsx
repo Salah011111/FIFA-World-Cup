@@ -1,14 +1,16 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 /*
  * @Author: 'Salah' '2236291956@qq.com'
  * @Date: 2022-09-26 18:30:38
  * @LastEditors: 'Salah' '2236291956@qq.com'
- * @LastEditTime: 2022-10-10 14:43:46
+ * @LastEditTime: 2022-10-11 10:42:32
  * @FilePath: \FIFA Wolrd Cup\src\pages\Home\index.tsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
 
-import React, { useEffect } from 'react'
+import React from 'react'
 import './index.css'
+import { useHistory } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 // import Menu from '../../components/Menu'
@@ -21,14 +23,12 @@ import worldCupUrl from '../../image/worldCupLogo.png'
 // eslint-disable-next-line import/extensions
 import NavigatorBar from '../../components/NavigatorBar'
 
-export default function Index(props) {
+export default function Index() {
+  const history = useHistory()
 
-
-  // useEffect(() => {
-
-  // },[])
-
-  // const { t } = useTranslation()
+  const routerPushTournament = () => {
+    history.push('/tournament')
+  }
 
   return (
     <div className='HomePage'>
@@ -54,7 +54,16 @@ export default function Index(props) {
                   <span className='connecttext'>Connect Wallet</span>
                 </div>
 
-                <div className='tradebtn'>
+                <div className='tradebtn'
+                  role="button"
+                  tabIndex={0}
+                  onKeyDown={() => {
+                    routerPushTournament()
+                  }}
+                  onClick={() => {
+                    routerPushTournament()
+                  }}
+                >
                   <span className='tradetext'>Trade Now</span>
                 </div>
               </div>
