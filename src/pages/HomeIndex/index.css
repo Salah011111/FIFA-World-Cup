@@ -110,8 +110,6 @@
 
 /* trade按钮文字样式 */
 .tradetext{
-    width: 95px;
-    height: 14px;
     font-size: 18px;
     font-family: Inter;
     font-weight: bold;
@@ -127,7 +125,7 @@
     object-fit: cover;
 }
 
-/* 上半部分右侧图片显示区域布局 */
+/* 上半部分右侧 世界杯图片显示区域布局 */
 .homeIndexTopRight{
     display: flex;
     justify-content: flex-end;
