@@ -10,9 +10,9 @@ div{
     width: 100% ;
 }
 
-body::-webkit-scrollbar{
+/* 全局隐藏滚动条 */
+::-webkit-scrollbar{
     display: none !important;
-    width: 0 !important;
 }
 
 .ihCizU{
