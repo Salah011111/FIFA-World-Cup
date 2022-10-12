@@ -747,4 +747,9 @@ body::-webkit-scrollbar{
         box-sizing: border-box;
     }
 
+    .TourPagebg {
+        width: 22.8125rem;
+        height: 8.4375rem;
+    }
+
 }
