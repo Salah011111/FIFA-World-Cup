@@ -22,7 +22,7 @@ function getRem () {
       const scale = document.documentElement.clientWidth / 1420
       document.documentElement.style.fontSize = `${baseSize * Math.min(scale, 1)}px`
   } else {
-      const scale = document.documentElement.clientWidth / 375
+      const scale = document.documentElement.clientWidth / 390
       document.documentElement.style.fontSize = `${baseSize * Math.min(scale, 2)}px`
   }
 }
