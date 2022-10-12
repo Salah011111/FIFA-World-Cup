@@ -739,3 +739,12 @@ body::-webkit-scrollbar{
     display: none !important;
     width: 0 !important;
 }
+
+
+@media only screen and (min-width: 300px) and (max-width: 640px){
+    .tour{
+        padding: .3125rem;
+        box-sizing: border-box;
+    }
+
+}
