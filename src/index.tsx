@@ -13,12 +13,31 @@ import Providers from './Providers'
 import 'inter-ui'
 import './i18n'
 
+const baseSize = 16
+
+function getRem () {
+  // eslint-disable-next-line prefer-destructuring
+  const clientWidth = document.documentElement.clientWidth
+  if(clientWidth > 750) {
+      const scale = document.documentElement.clientWidth / 1420
+      document.documentElement.style.fontSize = `${baseSize * Math.min(scale, 1)}px`
+  } else {
+      const scale = document.documentElement.clientWidth / 375
+      document.documentElement.style.fontSize = `${baseSize * Math.min(scale, 2)}px`
+  }
+}
+
+window.onload = function windowOnload() {
+  getRem();
+  window.addEventListener('resize', getRem, false);
+}
+
 if ('ethereum' in window) {
   (window.ethereum as any).autoRefreshOnNetworkChange = false
 }
 
 window.addEventListener('error', () => {
-   localStorage?.removeItem('redux_localstorage_simple_lists')
+    localStorage?.removeItem('redux_localstorage_simple_lists')
 })
 
 ReactDOM.render(
@@ -33,7 +52,7 @@ ReactDOM.render(
       </>
       <ResetCSS />
       <GlobalStyle />
-      
+
       <App />
       <Butnse />
     </Providers>
