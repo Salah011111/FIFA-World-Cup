@@ -6,7 +6,7 @@
  * @Author: 'Salah' '2236291956@qq.com'
  * @Date: 2022-09-27 13:48:36
  * @LastEditors: 'Salah' '2236291956@qq.com'
- * @LastEditTime: 2022-09-30 16:14:47
+ * @LastEditTime: 2022-10-12 17:55:24
  * @FilePath: \FIFA Wolrd Cup\src\pages\Swap\index.tsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -774,7 +774,7 @@ export default function index(props) {
           </Switch> */}
 
           {/* 底部导航栏区域 */}
-          <div className="SwapFooterArea" style={{ marginTop: '20px' }}>
+          <div className="SwapFooterArea" style={{ marginTop: '1.25rem' }}>
             <div className="SwapFooterLeftText">ABOUT / HELP / DEVELOPERS</div>
             <div className="SwapFooterRightArea">
               <span className="SwapFooterRightText">Copyight © 1994-2022 FIFA. All rights reserved</span>

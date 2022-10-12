@@ -30,3 +30,15 @@
     font-weight: bold;
     color: #333437;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 640px){
+    .SwapFooterArea{
+        margin-top:.625rem;
+    }
+
+    .SwapFooterLeftText,
+    .SwapFooterRightText{
+        font-size: .5rem;
+        white-space: wrap;
+    }
+}

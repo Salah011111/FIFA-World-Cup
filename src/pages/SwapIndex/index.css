@@ -80,3 +80,24 @@
     display: flex;
     justify-content: flex-end;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 640px){
+    .SwapPage{
+        padding: 0;
+    }
+
+    /* 中间弹窗内边距显示问题 */
+    .swapIndex{
+        padding: 0.5rem;
+    }
+
+    /* 中间方框swap内容布局 */
+    .swapCenter{
+        margin-top: .625rem;
+    }
+
+    /* 点击选择代币时候弹窗空白和便宜的显示问题 */
+    .sc-flMoUE > div:first-child{
+        display: none !important;
+    }
+}

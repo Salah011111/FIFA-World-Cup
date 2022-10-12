@@ -67,3 +67,10 @@
     font-weight: bold;
     color: #333437;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 640px){
+    .tabBtn{
+        width: 10.9375rem;
+        height: 2rem;
+    }
+}
