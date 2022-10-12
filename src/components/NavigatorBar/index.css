@@ -159,3 +159,39 @@
     background: linear-gradient(90deg, #3FBBFE, #A541FF);
     border-radius: 15px;
 }
+
+@media only screen and (min-width: 300px) and (max-width: 640px){
+    /* 手机端顶部导航栏整体布局 */
+    .navTop{
+        padding: .3125rem;
+        box-sizing: border-box;
+        height: 4.0625rem;
+    }
+
+    /* 手机端不显示中间按钮区域和下方线条 */
+    .navButtonblock,
+    .navLine{
+        display: none;
+    }
+
+    .menuArea{
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    /* 手机端按钮显示 */
+    .hzbhAV .jnvqfy div{
+        width: 9.0625rem;
+        height: 2.5rem;
+    }
+
+    /* 主页面左半边显示 */
+    .homeIndexTopLeft{
+        margin-top: 0px !important;
+    }
+
+    .sc-gInsOo{
+        height: 100%;
+    }
+}
