@@ -204,4 +204,8 @@
     .sc-gInsOo{
         height: 100%;
     }
+
+    .sc-gInsOo > .sc-fHuLdG{
+        display: none !important;
+    }
 }
