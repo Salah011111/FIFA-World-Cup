@@ -5,7 +5,7 @@
  * @Author: 'Salah' '2236291956@qq.com'
  * @Date: 2022-09-26 18:30:38
  * @LastEditors: 'Salah' '2236291956@qq.com'
- * @LastEditTime: 2022-10-13 14:43:19
+ * @LastEditTime: 2022-10-13 16:47:24
  * @FilePath: \FIFA Wolrd Cup\src\pages\Home\index.tsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -277,16 +277,16 @@ export default function Index() {
 
                 {/* 显示图片区域 */}
                 <div className='discoverImageArea'>
-                    <div className='ImageAreaLeft'>
+                    <div className='ImageAreaItem'>
                         <div className='ImageArea'>
                             <div className='discoverImageMaskLayer' />
                             <img src={hostCountry} alt='' className='discoverImage' />
-                            <span className='discoverTitle' style={{right:'90px'}}>HOST COUNTRY</span>
+                            <span className='discoverTitle' >HOST COUNTRY</span>
                         </div>
-                        <div className='ImageArea' style={{marginLeft:'58px'}}>
+                        <div className='ImageArea' >
                             <div className='discoverImageMaskLayer' />
                             <img src={Accomodation} alt='' className='discoverImage' />
-                            <span className='discoverTitle ' style={{right:'90px'}}>ACCOMODATION</span>
+                            <span className='discoverTitle ' >ACCOMODATION</span>
                         </div>
                     </div>
 
@@ -304,13 +304,13 @@ export default function Index() {
 
                 {/* 显示图片区域 */}
                 <div className='discoverImageArea'>
-                    <div className='ImageAreaLeft'>
+                    <div className='ImageAreaItem'>
                         <div className='ImageArea'>
                             <div className='discoverImageMaskLayer' />
                             <img src={LusailStadium} alt='' className='discoverImage'/>
-                            <span className='discoverTitle' style={{right:'90px'}}>LUSAIL STADIUM</span>
+                            <span className='discoverTitle' >LUSAIL STADIUM</span>
                         </div>
-                        <div className='ImageArea' style={{marginLeft:'58px'}}>
+                        <div className='ImageArea' >
                             <div className='discoverImageMaskLayer' />
                             <img src={EducationCityStadium} alt='' className='discoverImage' />
                             <div className='discoverImageFour'>

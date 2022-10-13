@@ -513,7 +513,7 @@
         width: 1749px;
         height: 106px;
         background: linear-gradient(to right, rgba(87,158,254,0.95), rgba(255,255,255,1));
-        border-radius: 0px 0px 0px 30px;
+        border-radius: 30px 0px 0px 0px;
         padding:38px 0 38px 77px;
         box-sizing: border-box;
     }
@@ -534,8 +534,9 @@
     }
 
     /* 轮播图区域左侧布局 */
-    .ImageAreaLeft{
+    .ImageAreaItem{
         display: flex;
+        justify-content: space-between;
     }
 
     .ImageArea{
@@ -544,12 +545,18 @@
         position: relative;
     }
 
+    /* discover图片遮罩层上面的文字 */
+    .ImageArea span{
+        right: 90px;
+    }
+
     /* 轮播图按钮区域布局 */
     .ArrowArea{
-        display: flex;
+        /* display: flex; */
         align-items: center;
         justify-content: flex-end;
         visibility: hidden;
+        display: none;
     }
 
     /* 三角形轮播图按钮 */
@@ -951,4 +958,79 @@
         box-sizing: border-box;
         height: auto;
     }
+
+    /* discover发现区域 */
+    .discoverArea{
+        padding: 0 ;
+        box-sizing: border-box;
+        border-radius: 1.875rem 0 0 0;
+        height: auto;
+    }
+
+    .discover{
+        width: 100%;
+        height: auto;
+    }
+
+    .discover:last-child{
+        margin-top: 1.75rem;
+    }
+
+    .discoverMaskLayer{
+        padding: .625rem .0 .625rem .9375rem;
+        box-sizing: border-box;
+        height: auto;
+        border-bottom-left-radius: 0px;
+        width: 100%;
+    }
+
+    /* DISCOVER QATAR 文字字体样式 */
+    .discoverMaskLayer span{
+        font-size: 1.125rem;
+    }
+
+    /* 显示discover区域布局 */
+    .discoverImageArea{
+        padding: 0;
+        flex-direction: column;
+    }
+
+    /* 显示图片区域 */
+    .ImageAreaItem{
+        flex-direction: column;
+    }
+
+    /* 显示discover区域图片布局 */
+    .ImageArea,
+    .discoverImage{
+        width: 100%;
+        height: 100%;
+    }
+
+    .ImageArea:nth-child(2n){
+        margin-top: .625rem;
+    }
+
+    /* discover遮罩层上面的文字区域布局 */
+    .ImageArea span{
+        right: 0;
+        font-size: 1.75rem;
+    }
+
+    /* discover区域 遮罩层布局 */
+    .discoverImageMaskLayer{
+        width: 100%;
+        height: 100%;
+    }
+
+    /* discover区域布局 */
+    .discoverImageFour{
+        left: inherit !important;
+        right: 0;
+    }
+
+    .discoverImageFour span{
+        text-align: right;
+    }
+
 }
