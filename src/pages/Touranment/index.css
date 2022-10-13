@@ -1059,4 +1059,77 @@
         line-height: 1.875rem;
     }
 
+    /* 底部导航栏区域 */
+    .TourFooterArea{
+        height: auto;
+        padding: 0;
+        flex-direction: column-reverse;
+    }
+
+    /* 手机端导航栏底部世界杯图片区域布局 */
+    .footerRight{
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* 手机端导航栏底部世界杯图片属性 */
+    .FooterLogoThree{
+        width: 10rem;
+        height: auto;
+        margin-top: .9375rem;
+    }
+
+    /* 手机端底部导航栏下半部分区域布局 */
+    .footerLeftArea{
+
+    }
+
+    /* FIFA logo图标 */
+    .LogoAreaOne{
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .LogoAreaOne img{
+        width: 10rem;
+        height:  auto;
+    }
+
+    /* 显示推特 脸书等区域布局 */
+    .LogoAreaTwo{
+        margin: .9375rem 0 0 0;
+        width: 100%;
+        box-sizing: border-box;
+        justify-content: space-around;
+    }
+
+    .contactIcon {
+        width: 2.1875rem;
+        height: 2.1875rem;
+        object-fit: cover;
+    }
+
+    .LogoAreaThree,
+    .LogoAreaFour{
+        padding: 0 0 0 .9375rem;
+        box-sizing: border-box;
+    }
+
+    .LogoAreaThree span,
+    .LogoAreaFour span{
+        font-size: 1rem;
+    }
+
+    .LogoAreaThree,
+    .LogoAreaFour{
+        margin: 0;
+        width: 100%;
+    }
+
+    .LogoAreaFour{
+        margin-bottom: 1.25rem;
+    }
+
 }
