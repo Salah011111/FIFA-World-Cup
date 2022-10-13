@@ -924,4 +924,31 @@
     .MaskLayerSecondtColumnText{
         font-size: 1rem !important;
     }
+
+    /* view区域页面布局 */
+    .MatchView{
+        width: 100%;
+        padding: .625rem;
+        box-sizing: border-box;
+        height: 100% !important;
+    }
+
+    .viewtextOne{
+        font-size: 1.5rem;
+    }
+
+    .viewtextTwo{
+        font-size: 1rem;
+        width: auto;
+        line-height: 2.5rem;
+        margin: .9375rem 0;
+    }
+
+    /* view白色按钮外部显示样式 */
+    .viewbtn{
+        width: 95px;
+        padding: .625rem 0;
+        box-sizing: border-box;
+        height: auto;
+    }
 }
