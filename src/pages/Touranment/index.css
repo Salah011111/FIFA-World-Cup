@@ -42,6 +42,10 @@
     z-index:2;
 }
 
+.PhonetextButtonBlock{
+    display: none;
+}
+
 /* 封面左侧图片样式 */
 .worldCupImage{
     width: 533px;
@@ -742,6 +746,9 @@ body::-webkit-scrollbar{
 
 
 @media only screen and (min-width: 300px) and (max-width: 640px){
+    .TourPage{
+        height: 100% !important;
+    }
     .tour{
         padding: .3125rem;
         box-sizing: border-box;
@@ -752,4 +759,122 @@ body::-webkit-scrollbar{
         height: 8.4375rem;
     }
 
+    /* 页面中间部分文字显示区域 */
+    .textButtonBlock{
+        margin: 0 !important;
+        display: none !important;
+    }
+
+    /* 左侧文字按钮 */
+    .PhonetextButtonBlock{
+        display: flex;
+        flex-direction: column;
+        padding: .625rem 0 0 .625rem;
+        box-sizing: border-box;
+    }
+
+    /* 左侧第一行文字 */
+    .PhonetextButtonBlock span{
+        font-size: .875rem;
+        /* -webkit-font-family: Frick 0.3; */
+        font-weight: 400;
+        color: #F3F3F3;
+        text-shadow: 0px 7px 8px rgba(0,0,0,0.23);
+        position: relative;
+        z-index: 5;
+    }
+
+    /* 左侧第二行文字 */
+    .PhonetextButtonBlock span:nth-child(2){
+        margin-top: 2rem;
+    }
+
+    .worldCupImage{
+        width: 5rem;
+        height: 5rem;
+        object-fit: cover;
+        bottom: 0;
+        right: 0;
+    }
+
+    /* 世界杯海报图 */
+    .coverImage{
+        top: 0 !important;
+        position: relative !important;
+        width: 100%;
+        height: 10rem;
+        border-radius: 0 !important;
+        margin-top: 1.5rem;
+    }
+
+    /* 移动端倒计时区域布局整体显示 */
+    .timeBlock{
+        margin: 0 !important;
+        padding: 0px
+    }
+
+    /* 中间显示图片区域 */
+    .ImageDisplay{
+        padding: 0;
+        height: auto;
+        width: 100%;
+    }
+
+    /* 显示图片区域上半部分显示文字区域 */
+    .ImagedisplayTitle{
+        margin: .625rem 0;
+    }
+
+    /* 显示文字大小样式 */
+    .ImagedisplayTitle span{
+        font-size: .875rem !important;
+    }
+
+    /* select all字体样式布局设置 */
+    .ImagedisplayTitle span:nth-child(2){
+        margin-top: 0 !important;
+    }
+
+    /* 两行图片显示布局 */
+    .firstImageColumn,
+    .secondImageColumn{
+        flex-direction: column;
+    }
+
+    .firstImageColumn{
+        margin: .625rem 0;
+    }
+
+    .secondImageColumn{
+        margin: 0;
+    }
+
+    /* 每张图片的布局显示 */
+    .firstImageColumn > div,
+    .secondImageColumn > div{
+        width: 100%;
+        margin: .3125rem 0;
+    }
+
+    /* 显示的图片属性设置 */
+    .firstImageColumn div img,
+    .secondImageColumn div img{
+        width: 100%;
+        height: auto;
+    }
+
+    /* 遮罩层布局显示 */
+    .firstColumnMaskLayer,
+    .secondColumnMaskLayer{
+        padding: .625rem;
+        box-sizing: border-box;
+        height: auto !important;
+        width: auto;
+    }
+
+    /* 遮罩层文字显示 */
+    .MaskLayerFirstColumnText,
+    .MaskLayerSecondtColumnText{
+        font-size: 1rem !important;
+    }
 }
