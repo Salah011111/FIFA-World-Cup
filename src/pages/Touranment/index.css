@@ -1033,4 +1033,30 @@
         text-align: right;
     }
 
+    /* about页面区域布局 */
+    .aboutArea{
+        padding: 0;
+        height: 100%;
+    }
+
+    .titleRectangle{
+        width: 100%;
+        padding: .9375rem;
+        box-sizing: border-box;
+        margin: 0;
+    }
+
+    /* about字体样式 */
+    .aboutTitle{
+        font-size: 3rem !important;
+    }
+
+    /* about介绍区域文字 */
+    .aboutIntroduction{
+        margin: 0;
+        width: 100%;
+        font-size: 1rem;
+        line-height: 1.875rem;
+    }
+
 }
