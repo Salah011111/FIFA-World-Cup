@@ -5,7 +5,7 @@
  * @Author: 'Salah' '2236291956@qq.com'
  * @Date: 2022-09-26 18:30:38
  * @LastEditors: 'Salah' '2236291956@qq.com'
- * @LastEditTime: 2022-10-13 10:42:41
+ * @LastEditTime: 2022-10-13 14:43:19
  * @FilePath: \FIFA Wolrd Cup\src\pages\Home\index.tsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -147,23 +147,25 @@ export default function Index() {
 
             {/* 中间时间 */}
             <div className="timeItemTwo">
-            <div>
-                <span className="timeData">135</span>
-                <span className="timeData">:</span>
-                <span className="timeData">04</span>
-                <span className="timeData">:</span>
-                <span className="timeData">43</span>
-            </div>
+                <div className='timeTitleArea'>
+                    <span className='timeData'>135</span>
+                    <span className='timeData'>DAYS</span>
+                </div>
+                <div className='pointArea'>
+                    <span className='timeData'>:</span>
+                </div>
+                <div className='timeTitleArea'>
+                    <span className='timeData'>04</span>
+                    <span className='timeData'>HOURS</span>
+                </div>
+                <div className='pointArea'>
+                    <span className='timeData'>:</span>
+                </div>
+                <div className='timeTitleArea'>
+                    <span className='timeData'>43</span>
+                    <span className='timeData'>MINUTES</span>
+                </div>
 
-            <div style={{ marginTop: '13px' }}>
-                <span className="timeTitle">DAYS</span>
-                <span className="timeTitle" style={{ marginLeft: '80px' }}>
-                HOURS
-                </span>
-                <span className="timeTitle" style={{ marginLeft: '48px' }}>
-                MINUTES
-                </span>
-            </div>
             </div>
 
             {/* 右侧图案 */}
