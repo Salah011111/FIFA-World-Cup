@@ -1132,4 +1132,14 @@
         margin-bottom: 1.25rem;
     }
 
+    .contactIcon:nth-child(1){
+        width: 2.0625rem;
+        height: 1.8125rem;
+    }
+
+    .contactIcon:nth-child(2){
+        width: 1.125rem;
+        height: 2rem;
+    }
+
 }
