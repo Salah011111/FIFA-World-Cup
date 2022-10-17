@@ -5,7 +5,7 @@
  * @Author: 'Salah' '2236291956@qq.com'
  * @Date: 2022-09-26 18:30:38
  * @LastEditors: 'Salah' '2236291956@qq.com'
- * @LastEditTime: 2022-10-17 14:04:45
+ * @LastEditTime: 2022-10-17 15:15:58
  * @FilePath: \FIFA Wolrd Cup\src\pages\Home\index.tsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -48,6 +48,8 @@ import hostCountry from '../../image/hostCountry.png'
 import Accomodation from '../../image/accomodation.png'
 import LusailStadium from '../../image/lusailStadium.png'
 import EducationCityStadium from '../../image/educationCityStadium.png'
+
+import PhoneFooter from '../../components/PhoneFooter/index'
 
 export default function Index() {
   // useEffect(() => {
@@ -423,6 +425,7 @@ export default function Index() {
         </div>
 
         {/* {t('Glide into a new kind of finance')} */}
+        <PhoneFooter footerIndex="1" />
         </div>
     )
 }

@@ -1141,7 +1141,7 @@
     /* 底部导航栏区域 */
     .TourFooterArea{
         height: auto;
-        padding: 0;
+        padding: 0 0 33px 0;
         flex-direction: column-reverse;
     }
 
