@@ -98,6 +98,11 @@
     display: none !important;
 }
 
+/* swap按钮点击成功后弹窗的布局提示 */
+.iBZLqn > .htRJve > .bgdZPC{
+    justify-content: center;
+}
+
 @media only screen and (min-width: 300px) and (max-width: 640px){
     .SwapPage{
         padding: 0;
@@ -145,8 +150,4 @@
         display: none !important;
     }
 
-    /* swap按钮点击成功后弹窗的布局提示 */
-    .iBZLqn > .htRJve > .bgdZPC{
-        justify-content: flex-start;
-    }
 }
