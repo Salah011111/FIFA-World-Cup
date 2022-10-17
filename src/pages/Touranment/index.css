@@ -357,12 +357,18 @@
         justify-content: space-between;
     }
 
+    /* 显示每个小组的白色区域布局 */
     .TabImageArea{
         display: flex;
         flex-direction: row;
         margin-bottom: 79px;
         align-items: center;
         justify-content: space-between;
+    }
+
+    /* PC端隐藏小组布局 */
+    .TabImagePhoneArea{
+        display: none;
     }
 
     /* 每个小组情况的图片 */
@@ -932,6 +938,79 @@
         font-size: 1rem !important;
     }
 
+    /* 世界杯分组区域布局 */
+    .worldCupGroup{
+        padding: 0 ;
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    /* meet the final group 字样属性 */
+    .groupTitle{
+        font-size: 1.125rem;
+        margin: .9375rem 0;
+        /* 标题居中 */
+        display: flex;
+        justify-content: center;
+    }
+
+    /* 显示世界杯分组小组 标题下方区域区域 */
+    .groupArea{
+        padding: 0 ;
+        box-sizing: border-box;
+    }
+
+    /* 隐藏选项切换按钮 */
+    .groupTabArea{
+        display: none;
+    }
+
+    /* 隐藏PC端小组分组布局 */
+    .TabImageArea{
+        display: none;
+    }
+
+    /* 手机端显示小组分组布局 */
+    .TabImagePhoneArea{
+        display: flex;
+        flex-direction: row;
+        margin: 1.25rem 0;
+        align-items: center;
+        justify-content: space-between;
+        overflow-x: scroll;
+    }
+
+    /* 每个小组情况的图片 */
+    .TabPhoneItem{
+        padding: .9375rem ;
+        background: #FFFFFF;
+        box-shadow: 6px 4px 10px 0px rgba(0,0,0,0.23);
+        border-radius: 25px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        margin: 0 .625rem;
+        width: 10.75rem;
+        height: 13.75rem;
+    }
+
+    .groupTabPhoneTitle{
+        text-align: center;
+    }
+
+    /* .groupTabTitle{
+        width: 180px !important;
+        text-align: center;
+        transform: scale(0.3) !important;
+        border: 1px solid red;
+    } */
+
+    /* 显示每个小组图片的属性 */
+    .tabPhoneImage{
+        height: 100%;
+        object-fit: cover;
+    }
+
     /* view区域页面布局 */
     .MatchView{
         width: 100%;
@@ -953,7 +1032,7 @@
 
     /* view白色按钮外部显示样式 */
     .viewbtn{
-        width: 95px;
+        width: 5.9375rem;
         padding: .625rem 0;
         box-sizing: border-box;
         height: auto;

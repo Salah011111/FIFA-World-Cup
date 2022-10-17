@@ -5,7 +5,7 @@
  * @Author: 'Salah' '2236291956@qq.com'
  * @Date: 2022-09-26 18:30:38
  * @LastEditors: 'Salah' '2236291956@qq.com'
- * @LastEditTime: 2022-10-13 16:47:24
+ * @LastEditTime: 2022-10-17 14:04:45
  * @FilePath: \FIFA Wolrd Cup\src\pages\Home\index.tsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -62,53 +62,102 @@ export default function Index() {
         settabItem(item)
     }
 
+    // 渲染世界杯前四个小组
     const renderTabOne = () => {
         return (
         <div className="TabImageArea">
             <div className="TabItem">
-            <span className="groupTabTitle">Group A</span>
-            <img src={GroupA} alt="" className="tabImage" />
+                <span className="groupTabTitle">Group A</span>
+                <img src={GroupA} alt="" className="tabImage" />
             </div>
 
             <div className="TabItem">
-            <span className="groupTabTitle">Group B</span>
-            <img src={GroupB} alt="" className="tabImage" />
+                <span className="groupTabTitle">Group B</span>
+                <img src={GroupB} alt="" className="tabImage" />
             </div>
 
             <div className="TabItem">
-            <span className="groupTabTitle">Group C</span>
-            <img src={GroupC} alt="" className="tabImage" />
+                <span className="groupTabTitle">Group C</span>
+                <img src={GroupC} alt="" className="tabImage" />
             </div>
 
             <div className="TabItem">
-            <span className="groupTabTitle">Group D</span>
-            <img src={GroupD} alt="" className="tabImage" />
+                <span className="groupTabTitle">Group D</span>
+                <img src={GroupD} alt="" className="tabImage" />
             </div>
         </div>
         )
     }
 
+    // 渲染世界杯后四个小组
     const renderTabTwo = () => {
         return (
         <div className="TabImageArea">
             <div className="TabItem">
-            <span className="groupTabTitle">Group E</span>
-            <img src={GroupE} alt="" className="tabImage" />
+                <span className="groupTabTitle">Group E</span>
+                <img src={GroupE} alt="" className="tabImage" />
             </div>
 
             <div className="TabItem">
-            <span className="groupTabTitle">Group F</span>
-            <img src={GroupF} alt="" className="tabImage" />
+                <span className="groupTabTitle">Group F</span>
+                <img src={GroupF} alt="" className="tabImage" />
             </div>
 
             <div className="TabItem">
-            <span className="groupTabTitle">Group G</span>
-            <img src={GroupG} alt="" className="tabImage" />
+                <span className="groupTabTitle">Group G</span>
+                <img src={GroupG} alt="" className="tabImage" />
             </div>
 
             <div className="TabItem">
-            <span className="groupTabTitle">Group H</span>
-            <img src={GroupH} alt="" className="tabImage" />
+                <span className="groupTabTitle">Group H</span>
+                <img src={GroupH} alt="" className="tabImage" />
+            </div>
+        </div>
+        )
+    }
+
+    // 显示在移动端的小组分组情况
+    const renderPhoneGroup = () => {
+        return (
+        <div className="TabImagePhoneArea">
+            <div className="TabPhoneItem">
+                <span className="groupTabPhoneTitle">Group A</span>
+                <img src={GroupA} alt="" className="tabPhoneImage" />
+            </div>
+
+            <div className="TabPhoneItem">
+                <span className="groupTabPhoneTitle">Group B</span>
+                <img src={GroupB} alt="" className="tabPhoneImage" />
+            </div>
+
+            <div className="TabPhoneItem">
+                <span className="groupTabPhoneTitle">Group C</span>
+                <img src={GroupC} alt="" className="tabPhoneImage" />
+            </div>
+
+            <div className="TabPhoneItem">
+                <span className="groupTabPhoneTitle">Group D</span>
+                <img src={GroupD} alt="" className="tabPhoneImage" />
+            </div>
+
+            <div className="TabPhoneItem">
+                <span className="groupTabPhoneTitle">Group E</span>
+                <img src={GroupE} alt="" className="tabPhoneImage" />
+            </div>
+
+            <div className="TabPhoneItem">
+                <span className="groupTabPhoneTitle">Group F</span>
+                <img src={GroupF} alt="" className="tabPhoneImage" />
+            </div>
+
+            <div className="TabPhoneItem">
+                <span className="groupTabPhoneTitle">Group G</span>
+                <img src={GroupG} alt="" className="tabPhoneImage" />
+            </div>
+
+            <div className="TabPhoneItem">
+                <span className="groupTabPhoneTitle">Group H</span>
+                <img src={GroupH} alt="" className="tabPhoneImage" />
             </div>
         </div>
         )
@@ -236,9 +285,10 @@ export default function Index() {
             {/* 图片展示区域 */}
             {tabItem === 1 && renderTabOne()}
             {tabItem === 2 && renderTabTwo()}
+            { renderPhoneGroup() }
+
 
             {/* 选项卡tab区域 */}
-
             <div className="groupTabArea">
                 <div
 
