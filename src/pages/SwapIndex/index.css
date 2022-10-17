@@ -81,6 +81,23 @@
     justify-content: flex-end;
 }
 
+/* swap弹窗上半部分 */
+.iBZLqn > .htRJve {
+    padding: .9375rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* swap弹窗中上班部分交易金额数字的文字属性 */
+.lkLplH > .eHgAlQ{
+    font-size: 14px;
+}
+
+/* swap点击弹窗后读取动画右边的内容展示隐藏 */
+.iBZLqn > .htRJve > .KwSkZ{
+    display: none !important;
+}
+
 @media only screen and (min-width: 300px) and (max-width: 640px){
     .SwapPage{
         padding: 0;
@@ -99,5 +116,37 @@
     /* 点击选择代币时候弹窗空白和便宜的显示问题 */
     .sc-flMoUE > div:first-child{
         display: none !important;
+    }
+
+    /* 修改点击swap按钮弹窗 居中*/
+    .kNTOXW{
+        margin: auto !important;
+    }
+
+    /* swap弹窗上半部分 */
+    .iBZLqn > .htRJve {
+        padding: .9375rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* swap弹窗上半部分的边距设置 */
+    .iBZLqn > .htRJve > .fa-dDH{
+        margin:0 !important;
+    }
+
+    /* swap弹窗中上班部分交易金额数字的文字属性 */
+    .lkLplH > .eHgAlQ{
+        font-size: 10px;
+    }
+
+    /* 点击swap弹窗后的文字提示暂时隐藏起来 */
+    .iBZLqn > .htRJve > .KwSkZ{
+        display: none !important;
+    }
+
+    /* swap按钮点击成功后弹窗的布局提示 */
+    .iBZLqn > .htRJve > .bgdZPC{
+        justify-content: flex-start;
     }
 }
