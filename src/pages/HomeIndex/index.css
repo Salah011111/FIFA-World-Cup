@@ -24,7 +24,7 @@
 .home{
     width: 100%;
     position: relative;
-    z-index: 2;
+    /* z-index: 2; */
 }
 
 /* 导航栏下方页面 */
@@ -160,6 +160,9 @@
     margin-top:17px;
 }
 
+.Phonefooter{
+    display: none !important;
+}
 
 @media only screen and (min-width: 300px) and (max-width: 640px){
     .HomePage{
@@ -268,5 +271,9 @@
         font-weight: 600;
         color: #919191;
         margin-top:5px;
+    }
+
+    .Phonefooter{
+        display: flex !important;
     }
 }

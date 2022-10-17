@@ -3,7 +3,7 @@
  * @Author: 'Salah' '2236291956@qq.com'
  * @Date: 2022-09-26 18:30:38
  * @LastEditors: 'Salah' '2236291956@qq.com'
- * @LastEditTime: 2022-10-11 10:42:32
+ * @LastEditTime: 2022-10-17 16:18:15
  * @FilePath: \FIFA Wolrd Cup\src\pages\Home\index.tsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -22,6 +22,7 @@ import worldCupUrl from '../../image/worldCupLogo.png'
 // 引入组件
 // eslint-disable-next-line import/extensions
 import NavigatorBar from '../../components/NavigatorBar'
+import PhoneFooter from '../../components/PhoneFooter/index'
 
 export default function Index() {
   const history = useHistory()
@@ -100,6 +101,7 @@ export default function Index() {
         </div>
       </div>
       {/* {t('Glide into a new kind of finance')} */}
+      <PhoneFooter footerIndex='2'/>
     </div>
   )
 }
