@@ -6,7 +6,7 @@
  * @Author: 'Salah' '2236291956@qq.com'
  * @Date: 2022-09-27 13:48:36
  * @LastEditors: 'Salah' '2236291956@qq.com'
- * @LastEditTime: 2022-10-12 17:55:24
+ * @LastEditTime: 2022-10-17 15:34:57
  * @FilePath: \FIFA Wolrd Cup\src\pages\Swap\index.tsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -85,6 +85,8 @@ import FullPositionCard from '../../components/PositionCard'
 
 // 引入StyledInternalLink 组件
 import { StyledInternalLink } from '../../components/Shared'
+
+import PhoneFooter from '../../components/PhoneFooter'
 
 import AppBody from '../AppBody'
 
@@ -229,7 +231,6 @@ export default function index(props) {
     // }
     if (props.location.state !== undefined) {
       settabButton(props.location.state.id)
-      
       // settabButton(props.location.state.id)
     }
     // settabButton(2)
@@ -782,6 +783,8 @@ export default function index(props) {
           </div>
         </div>
       </div>
+
+      <PhoneFooter footerIndex='3'/>
     </div>
   )
 }
