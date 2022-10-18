@@ -6,7 +6,7 @@
  * @Author: 'Salah' '2236291956@qq.com'
  * @Date: 2022-09-27 13:48:36
  * @LastEditors: 'Salah' '2236291956@qq.com'
- * @LastEditTime: 2022-10-18 13:43:11
+ * @LastEditTime: 2022-10-18 14:30:49
  * @FilePath: \FIFA Wolrd Cup\src\pages\Swap\index.tsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -225,7 +225,7 @@ export default function index(props) {
     // console.log(buie);
 
     // if (props) {
-      console.log(props)
+      // console.log(props)
     // } else {
     //   console.log('789')
     // }

@@ -2,7 +2,7 @@
  * @Author: 'Salah' '2236291956@qq.com'
  * @Date: 2022-10-17 14:13:45
  * @LastEditors: 'Salah' '2236291956@qq.com'
- * @LastEditTime: 2022-10-17 16:19:27
+ * @LastEditTime: 2022-10-18 14:30:17
  * @FilePath: \cypress\src\components\PhoneFooter\index.tsx
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -22,7 +22,6 @@ export default function PhoneFooter(props) {
   }
 
   useEffect(() => {
-    console.log(props.footerIndex)
     setfooterTabIndex(Number(props.footerIndex))
   }, [props, footerTabIndex])
 
