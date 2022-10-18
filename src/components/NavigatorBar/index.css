@@ -130,7 +130,9 @@
 }
 
 /* 导航栏右上角按钮文字样式 */
-.gcCDSt,.kqVKBK{
+/* .gcCDSt,.kqVKBK{ */
+.cjuMmG > div > button.gcCDSt,
+.cjuMmG > div > button.kqVKBK{
     border: none!important;
     background: transparent !important;
     font-size: 18px !important;
@@ -143,7 +145,7 @@
 }
 
 /* 隐藏页面中间连接钱包按钮上面文字  */
-.jcQTaw {
+.dJGJuG > .jUvaaN > .botGMG > .jcQTaw {
     display: none !important;
 }
 
@@ -158,6 +160,11 @@
     height: 47px;
     background: linear-gradient(90deg, #3FBBFE, #A541FF);
     border-radius: 15px;
+}
+
+/* 连接钱包按钮下方显示区域 */
+.menuArea > .hwTNJS > .bdhUmW {
+    display: none;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 640px){
