@@ -42,6 +42,7 @@ import { Field } from '../../state/burn/actions'
 import { useUserDeadline, useUserSlippageTolerance } from '../../state/user/hooks'
 
 import NavigatorBar from '../../components/NavigatorBar'
+import PhoneFooter from '../../components/PhoneFooter'
 
 import '../SwapIndex/index.css'
 import '../SwapIndex/tab.css'
@@ -763,6 +764,8 @@ export default function RemoveLiquidity({
               <span className='SwapFooterRightText'>Copyight © 1994-2022 FIFA. All rights reserved</span>
             </div>
           </div>
+
+          <PhoneFooter footerIndex='3'/>
         </div>
 
       </div>
