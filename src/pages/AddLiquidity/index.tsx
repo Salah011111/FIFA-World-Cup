@@ -44,6 +44,7 @@ import '../SwapIndex/swapfooter.css'
 import './index.css'
 
 import NavigatorBar from '../../components/NavigatorBar'
+import PhoneFooter from '../../components/PhoneFooter'
 
 export default function AddLiquidity({
   match: {
@@ -529,6 +530,8 @@ export default function AddLiquidity({
               <span className='SwapFooterRightText'>Copyight © 1994-2022 FIFA. All rights reserved</span>
             </div>
           </div>
+
+          <PhoneFooter footerIndex='3'/>
         </div>
 
       </div>
