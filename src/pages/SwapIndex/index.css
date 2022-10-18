@@ -163,6 +163,12 @@
     font-size: 40px;
 }
 
+/* 移除流动性弹窗第二行和第四行图片和文字居中布局 */
+.iBZLqn > .htRJve > .fa-dDHS > .botGMG:nth-child(1),
+.iBZLqn > .htRJve > .fa-dDHS > .botGMG:nth-child(3){
+    align-items: center;
+}
+
 @media only screen and (min-width: 300px) and (max-width: 640px){
     .SwapPage{
         padding: 0;
