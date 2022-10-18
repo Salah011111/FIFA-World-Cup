@@ -172,6 +172,7 @@
     display: none;
 }
 
+/* 解决滑动屏幕导航栏闪动现象 */
 .menuArea > .hwTNJS > .cUfjcy {
     position: inherit;
     background-color: inherit;
