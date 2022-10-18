@@ -103,6 +103,32 @@
     justify-content: center;
 }
 
+
+/* 弹窗中间显示提供流动性金额的数据上边距 */
+.bszPtf > .eQYOcj {
+    margin: 0!important;
+}
+
+.bszPtf > .hXtPLs {
+    padding: 0 ;
+}
+
+/* 弹窗中间显示提供流动性金额的数据文字属性 */
+/* .iBZLqn > .htRJve > .bszPtf > .evkjzG { */
+.eQYOcj > .evkjzG {
+    font-size: 16px !important;
+}
+
+/* 显示两种代币部署的图案 修复显示层级较低问题 */
+.imSGmA{
+    min-width: inherit !important;
+}
+
+/* PC端显示弹窗第二行右侧图片 */
+.eQYOcj > .jOyUdX{
+    justify-content: flex-end;
+}
+
 @media only screen and (min-width: 300px) and (max-width: 640px){
     .SwapPage{
         padding: 0;
@@ -118,6 +144,11 @@
         margin-top: .625rem;
     }
 
+    /* 添加流动性弹窗的上边距 */
+    .AddLiqidity{
+        margin-top: 15px;
+    }
+
     /* 点击选择代币时候弹窗空白和便宜的显示问题 */
     .sc-flMoUE > div:first-child{
         display: none !important;
@@ -130,7 +161,7 @@
 
     /* swap弹窗上半部分 */
     .iBZLqn > .htRJve {
-        padding: .9375rem;
+        padding: 8px;
         display: flex;
         flex-direction: column;
     }
@@ -150,4 +181,27 @@
         display: none !important;
     }
 
+    /* 点击流动性按钮弹窗 supply界面 */
+    .iBZLqn {
+
+    }
+
+    .cBbXqI > .bJeyPI{
+        padding: 14px;
+    }
+
+    /* 手机端添加流动性弹窗显示数据区域布局 */
+    .kvddcW > .botGMG {
+        flex-direction: column;
+    }
+
+    /* 文字居中 */
+    .kvddcW > .botGMG > .fgiAxh{
+        display: flex;
+        justify-content: center;
+    }
+
+    .kWAuZF > .hLlXtp{
+        width: inherit;
+    }
 }
