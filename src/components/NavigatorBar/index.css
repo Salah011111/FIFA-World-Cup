@@ -96,8 +96,13 @@
 }
 
 /* 隐藏横条导航栏左侧内容 */
+.cUfjcy > .cjuMmG:first-child,
 .hzbhAV > .cjuMmG:first-child{
     display: none !important;
+}
+
+.cUfjcy {
+    background-color: transparent;
 }
 
 /* 隐藏连接按钮右侧头像图片显示 */
@@ -165,6 +170,11 @@
 /* 连接钱包按钮下方显示区域 */
 .menuArea > .hwTNJS > .bdhUmW {
     display: none;
+}
+
+.menuArea > .hwTNJS > .cUfjcy {
+    position: inherit;
+    background-color: inherit;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 640px){
