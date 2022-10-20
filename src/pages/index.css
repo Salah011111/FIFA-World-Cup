@@ -59,3 +59,47 @@ div{
 .cwvTKS{
     display: none;
 }
+
+/* 等待确认弹窗的文字字样 */
+.igfKG > .eIbyFk {
+    color:#3FBBFE;
+}
+
+.igfKG > .hElrcP{
+    color:#3FBBFE;
+}
+
+.diWDkO > .bBmbUm > .ZWIRJ > .egMrFR{
+    color:#3FBBFE;
+}
+
+/* .kvddcW > button .htQCGm{
+    background-color:linear-gradient(270deg, #3FBBFE, #A541FF) !important;
+} */
+
+/* 左下角显示价格字样 */
+.pSNhC:first-child > div  {
+    width: 250px ;
+}
+
+/* 滚动条 */
+.cjuMmG > .iurQOc{
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+/* 滑动条下边距为零 */
+.brmTqb{
+    margin: 0 !important;
+}
+
+/* 供应和交换按钮背景色 */
+.gTKfAE button,.htQCGm{
+    background: linear-gradient(270deg, #3FBBFE, #A541FF) ;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 640px){
+    .pSNhC:first-child > div{
+        width: 275px;
+    }
+}
