@@ -8,6 +8,8 @@ import { useRemovePopup } from '../../state/application/hooks'
 import ListUpdatePopup from './ListUpdatePopup'
 import TransactionPopup from './TransactionPopup'
 
+// 交易成功之后的弹窗提示
+
 export const StyledClose = styled(X)`
   position: absolute;
   right: 10px;
